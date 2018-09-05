@@ -1,6 +1,5 @@
 body {
 	font-family: "Arial", sans-serif;
-	background-color: #f3f3f3;
 }
 
 #wrapper {
@@ -74,7 +73,6 @@ ul {
 }
 
 body {
-    background-color: #f1f1f1;
     padding: 20px;
     font-family: Arial;
 }
@@ -95,3 +93,14 @@ body {
     width: 25%;
 }
 
+#uebertitel {
+	background-color: #919191;
+	line-height: 50px;
+	padding-left: 20px;
+}
+
+#textinhalt {
+	background-color: #f2f2f2;
+	line-height: 50px;
+	padding-left: 20px;
+}
