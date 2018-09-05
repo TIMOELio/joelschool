@@ -60,3 +60,38 @@ ul.main_menu {
 text1 {
 	text-align: center;
 }
+
+ul {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#inhalt {
+	background-color: #0040FF;
+	display: inline;
+	padding: 0 10px 0 10px;
+}
+
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
