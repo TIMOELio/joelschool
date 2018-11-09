@@ -8,8 +8,8 @@ body br {
 
 
 header {
-    background-color: #0040FF;
-    height: 150px;
+    background-color: darkslategray;
+    height: 180px;
     padding: 4px;
 }
 
@@ -18,38 +18,42 @@ header img {
 }
 
 header h1 {
+    font-size: 50px;
+    font-family: Verdana,sans-serif;
     text-transform: uppercase;
     text-align: center;
-    color: #fff;
+    color: white;
     line-height: 50px;
+    letter-spacing: 5px;
 }
 
 header h2 {
     font-variant: small-caps;
     text-align: center;
-    color: #fff;
+    color: yellow;
 }
-
-
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #dedede;
+    text-align: center;
 }
 
 li {
-    float: left;
+    display: inline-block;
+    list-style-type: none;
 }
 
 li a {
     display: inline-block;
-    color: #fff;
+    color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
+    font-size: 21px
 }
 
 nav {
@@ -58,32 +62,42 @@ nav {
     top: 0;
 }
 
-.nav-selections {
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font: 18px "lato", sans-serif;
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    padding: 18px;
-    float: right;
-    margin-left: 50px;
-    transition: 1.5s;
-}
-
-.nav-selections:hover {
-    transition: 1.5s;
-    color: black;
-}
-
 .active {
-    background-color: orange;
+    background-color: yellow;
+}
+
+ul li ul {
+    background: #dedede;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: inherit
+    left: 0;
+    display: left;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    text-align: left;
+    display: grid;
+}
+
+li:hover,
+li:focus-within {
+    background: #919191;
+    cursor: pointer;
 }
 
 #headline {
     background-color: #919191;
     line-height: 50px;
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 #text_content {
@@ -92,7 +106,7 @@ nav {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-    line-height: 9px;
+    line-height: 25px;
     text-align: center;
 }
 
@@ -101,22 +115,3 @@ nav {
     padding-top: 20px;
 }
 
-
-.fa {
-  padding: 15px;
-  font-size: 30px;
-  width: 25px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
