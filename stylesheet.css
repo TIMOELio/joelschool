@@ -101,13 +101,28 @@ li:focus-within {
 }
 
 #text_content {
+    font-size: 20px;
     background-color: #dedede;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-    line-height: 25px;
-    text-align: center;
+    line-height: 10px;
+    text-align: left;
+}
+
+#text_title {
+    font-size: 70px;
+    text-align: left;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 0px;
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -.51px black;
+}
+
+#date {
+    font-size: 10px;
+    font-weight: bold;
 }
 
 #downline {
