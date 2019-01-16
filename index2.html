@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" media="screen" href="stylesheet.css">
+		<title>Joel Brendle School</title>
+		<link rel="icon" href="rubiks.png">
+	</head>
+    <body>
+        <header>
+            <h1>Joel Brendle</h1>
+            <h2>Portfolio</h2>
+        </header>
+        <SCRIPT>
+            function passWord() {
+            var testV = 1;
+            var pass1 = prompt('Bitte gib das Passwort für Zugriff auf die Website mit Inhalt',' ');
+            while (testV < 3) {
+            if (!pass1) 
+            history.go(-1);
+            if (pass1.toLowerCase() == "letmein") {
+            alert('100% Richtig');
+            window.open("index.html");
+            break;
+            } 
+            testV+=1;
+            var pass1 = 
+            prompt('Falsches Passwort, versuche es noch einmal','Password');
+            }
+            if (pass1.toLowerCase()!="password" & testV ==3) 
+            history.go(-1);
+            return " ";
+            } 
+            </SCRIPT>
+            <CENTER>
+            <FORM>
+            <input type="button" value="Website mit Inhalt" onClick="passWord()">
+            </FORM>
+            </CENTER>
+        <div id="headline">
+            <h1>Über mich</h1>
+        </div>
+        <div id="text_content">
+            <p>Hey, mein Name ist Joel Brendle. Ich kommen aus einem kleinen Dorf namens <a href="https://www.google.com/maps/place/8586+Erlen/@47.5499454,9.197387,13z/data=!4m5!3m4!1s0x479afad3ae032915:0x5521752811e830be!8m2!3d47.5518448!4d9.2265297" target="_blank">Erlen</a> im Thurgau.</p>
+            <p>Zurzeit besuche ich an der Benedict Informatik Schule das 1. Lehrjahr.</p>
+            <p>In meiner Freizeit programmieren ich gerne, bin drausen, lese oder schaue Filme.</p>
+        </div>
+        <br>
+        <div id="text_content">
+            <p>Dies hier ist meine  Portfolio Website. Sie ist für Schulfächer wie Modul 431 oder Abu gedacht.</p>
+        </div>
+        <div id="downline">
+            <p>Made by Joel Brendle</p>
+        </div>
+	</body>
+</html>
