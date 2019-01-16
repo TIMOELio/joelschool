@@ -11,21 +11,32 @@
             <h1>Joel Brendle</h1>
             <h2>Portfolio</h2>
         </header>
-        <nav role="navigation">
-            <ul>
-                <li><a class="active" href="index.html">Start</a></li>
-                <li><a href="abu.html">ABU</a>
-                    <ul class="dropdown" arial-label="submenu">
-                        <li><a href="Abu/abuneuste.html">Neuste</a></li>
-                    </ul>
-                </li>
-                <li><a href="m431.html">Modul 431</a>
-                    <ul class="dropdown" arial-label="submenu">
-                        <li><a href="M431/m431neuste.html">Neuste</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+        <SCRIPT>
+            function passWord() {
+            var testV = 1;
+            var pass1 = prompt('Bitte gib das Passwort für Zugriff auf die Website mit Inhalt',' ');
+            while (testV < 3) {
+            if (!pass1) 
+            history.go(-1);
+            if (pass1.toLowerCase() == "letmein") {
+            alert('100% Richtig');
+            window.open("index.html");
+            break;
+            } 
+            testV+=1;
+            var pass1 = 
+            prompt('Falsches Passwort, versuche es noch einmal','Password');
+            }
+            if (pass1.toLowerCase()!="password" & testV ==3) 
+            history.go(-1);
+            return " ";
+            } 
+            </SCRIPT>
+            <CENTER>
+            <FORM>
+            <input type="button" value="Website mit Inhalt" onClick="passWord()">
+            </FORM>
+            </CENTER>
         <div id="headline">
             <h1>Über mich</h1>
         </div>
