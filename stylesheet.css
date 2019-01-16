@@ -107,7 +107,7 @@ li:focus-within {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-    line-height: 10px;
+    line-height: 30px;
     text-align: left;
 }
 
@@ -130,3 +130,10 @@ li:focus-within {
     padding-top: 20px;
 }
 
+#grossertext {
+    font-size: 25px;
+}
+
+#nochgrosserertext {
+    font-size: 30px;
+}
