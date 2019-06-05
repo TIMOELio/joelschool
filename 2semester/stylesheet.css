@@ -1,0 +1,99 @@
+@font-face {
+    font-family: googlefont;
+    src: url(font/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: googlefont-bold;
+    src: url(font/roboto/Roboto-Bold.ttf)
+}
+
+body {
+    font-family: googlefont;
+}
+
+nav {
+    font-family: googlefont-bold;
+    text-transform: uppercase;
+    font-size: 200%;
+    margin-top: 40px;
+    margin-left: 40px;
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    padding: 5px 0 5px;
+}
+
+nav a:link {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: gray;
+}
+
+header {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 160%;
+    background-color: orange;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    padding: 5px 0 5px;
+    text-transform: uppercase;
+    font-family: googlefont-bold;
+    letter-spacing: 5px;
+}
+
+div {
+    text-align: center;
+    font-size: 200%;    
+    background-color: orange;
+    color: white;
+    -webkit-text-stroke: 0.3px black;
+    padding: 10px 20% 10px 20%;
+}
+
+#a1 {
+    margin-top: 15%;
+    background-color: white;
+    padding: 0 0 0 0;
+}
+
+#a3 {
+    margin-top: 5%;
+}
+
+td {
+    text-align: left;
+    width: 400px;
+    padding-top: 0;
+}
+
+table {
+    margin-left: 10%;
+}
+
+main a {
+    text-decoration: none;
+    color: rgb(255, 108, 108);
+}
+
+main a:hover {
+    color: gray;
+
+}
+
+#b1 {
+    margin-top: 3%;
+    background-color: white;
+    padding: 0 0 0 0;
+}
+
+#b2 {
+    margin-top: 3%;
+    background-color: orange;
+    font-size: 150%;
+    text-align: left;
+}
